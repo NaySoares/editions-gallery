@@ -10,7 +10,7 @@ import {
   Flex,
 } from "@chakra-ui/react";
 
-const ModalCustom = ({ src, isOpen, onClose }) => (
+const ModalCustom = ({ src, isOpen, onClose, altImg = "edtion" }) => (
   <>
     <Modal
       isOpen={isOpen}
@@ -25,6 +25,7 @@ const ModalCustom = ({ src, isOpen, onClose }) => (
           <Flex align="center" justify="center">
             <Image
               src={src}
+              alt={altImg}
               loading="lazy"
               htmlHeight="1000px"
               htmlWidth="900px"

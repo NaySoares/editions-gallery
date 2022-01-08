@@ -20,7 +20,7 @@ function Card({ src, title = "edition" }) {
         }}
         onClick={() => handleClick()}
       />
-      <ModalCustom src={src} isOpen={isOpen} onClose={onClose} />
+      <ModalCustom src={src} altImg={title} isOpen={isOpen} onClose={onClose} />
     </Box>
   );
 }
