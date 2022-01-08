@@ -9,19 +9,19 @@ import {
   Link,
 } from "@chakra-ui/react";
 
-import { FiTwitter, FiGithub } from "react-icons/Fi";
+import { IoLogoTwitter, IoLogoGithub } from "react-icons/io5";
 
 const Sidebar = () => (
   <VStack h="100%" width="100%" maxWidth="350px" justify="center" mt={6} mb={6}>
     <Box>
       <VStack align="center" w="100%">
-        <Link href='https://portfolio-blog-phi.vercel.app'>
-        <Heading as="h1" size="3xl" pr="20">
-          Elienai
-        </Heading>
-        <Heading as="h1" size="3xl" pl="20">
-          Soares
-        </Heading>
+        <Link href="https://portfolio-blog-phi.vercel.app">
+          <Heading as="h1" size="3xl" pr="20">
+            Elienai
+          </Heading>
+          <Heading as="h1" size="3xl" pl="20">
+            Soares
+          </Heading>
         </Link>
       </VStack>
 
@@ -33,9 +33,9 @@ const Sidebar = () => (
       </Text>
     </Box>
     <HStack align="flex-start" w="100%" spacing="15px" pl="15px">
-      <Link href="https://twitter.com/ElienaiSoares07">
+      <Link href="https://twitter.com/ElienaiSoares07" target="_blank">
         <Icon
-          as={<FiTwitter/>}
+          as={IoLogoTwitter}
           fontSize="20"
           _hover={{
             cursor: "pointer",
@@ -44,9 +44,9 @@ const Sidebar = () => (
           }}
         />
       </Link>
-      <Link href="https://github.com/NaySoares">
+      <Link href="https://github.com/NaySoares" target="_blank">
         <Icon
-          as={<FiGithub/>}
+          as={IoLogoGithub}
           fontSize="20"
           _hover={{
             cursor: "pointer",
