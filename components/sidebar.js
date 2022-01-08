@@ -35,7 +35,7 @@ const Sidebar = () => (
     <HStack align="flex-start" w="100%" spacing="15px" pl="15px">
       <Link href="https://twitter.com/ElienaiSoares07">
         <Icon
-          as={FiTwitter}
+          as={<FiTwitter/>}
           fontSize="20"
           _hover={{
             cursor: "pointer",
@@ -46,7 +46,7 @@ const Sidebar = () => (
       </Link>
       <Link href="https://github.com/NaySoares">
         <Icon
-          as={FiGithub}
+          as={<FiGithub/>}
           fontSize="20"
           _hover={{
             cursor: "pointer",
