@@ -1,7 +1,7 @@
 import { Image, Box, useDisclosure } from "@chakra-ui/react";
 import ModalCustom from "./modal";
 
-function Card({ src, title }) {
+function Card({ src, title = "edition" }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const handleClick = () => {
