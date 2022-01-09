@@ -1,5 +1,6 @@
 import { VStack, Wrap, WrapItem } from "@chakra-ui/react";
 import Card from "./card";
+import { Drag } from "./animation/drag";
 
 function Gallery() {
   function importAll(r) {
@@ -17,7 +18,12 @@ function Gallery() {
   );
 
   return (
-    <VStack borderLeft="1px" borderColor="gray" overflowY="scroll" overflowX="hidden">
+    <VStack
+      borderLeft="1px"
+      borderColor="gray"
+      overflowY="scroll"
+      overflowX="hidden"
+    >
       <Wrap
         justify="center"
         align="center"
@@ -31,7 +37,9 @@ function Gallery() {
         {list.map((item, index) => {
           return (
             <WrapItem mt={5} key={index}>
-              <Card src={`/images/${item}`} />
+              <Drag delay={`1.${index}`}>
+                <Card src={`/images/${item}`} />
+              </Drag>
             </WrapItem>
           );
         })}
